@@ -68,15 +68,9 @@ The paper does not provide an index→ground-truth mapping for the test set, so 
 
 | Item | Description |
 |------|-------------|
-| **`inspect_ckpt.py`** | Check one checkpoint for NaN/Inf and basic stats. |
-| **`compare_ckpts.py`** | Compare all checkpoints in a folder to the latest. |
 | **`export_test_reference.py`** | Export ZF images from test tfrecords → `im_*samples.npy`. |
-| **`export_gt_from_list.py`** | Build `im_*samples.npy` from a list of GT paths (for when you have index→GT). |
 | **`run_analysis.py`** | PSNR/SSIM/NMSE between a recon folder and a reference folder. |
 | **`plot_reference_images.py`** | Plot selected `.npy` images (e.g. ZF or recon). |
-| **`TRAIN_AND_VALIDATE.md`** | Training command, TensorBoard, checkpoint comparison/inspection. |
-| **`IXI_GT_SYNC.md`** | How eval indices work and options for using real GT. |
-| **`NaN_FIX_SUMMARY.md`** | Why NaNs appeared and how gradient sanitization fixes them. |
 | **`SSDiffRecon/diffusion/diffusion_tf/utils.py`** | Gradient sanitization and reduced NaN logging. |
 
 ---
