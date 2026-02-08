@@ -77,5 +77,5 @@ The paper does not provide an index→ground-truth mapping for the test set, so 
 
 ## 8. Original Repo
 
-For dataset setup, citation, and the original run commands, see **`SSDiffRecon/README.md`**.
+For dataset setup, citation, and the original run commands, see **`[SSDiffRecon/README.md](https://github.com/yilmazkorkmaz1/SSDiffRecon.git)`**.
 
