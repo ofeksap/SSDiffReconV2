@@ -6,7 +6,7 @@ Below is the gist of what was done on top of it:
 
 ---
 
-## 1. **Generating dataset
+## 1. Generating dataset
 
 - **Evaluation:** Evaluate the original SSDiffRecon using pretrained weights on IXI dataset to reveive binary Numpy arrays of the results.
 - **Conversion:** Converting the evalutaion results into Tensor Flow records for the model to process using **`SSDiffReconV2/convert_to_tfr_with_split.py`**
