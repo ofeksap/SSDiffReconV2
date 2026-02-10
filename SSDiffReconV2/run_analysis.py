@@ -1,7 +1,7 @@
 """
 Analyze evaluation results: PSNR, SSIM, NMSE between reconstructions and reference.
 
-For the original model outputs in results/ixi_samples_iter1/test/:
+For the original model outputs in results/ixi_samples/test/:
 
   1. Export reference images (same order as eval) once:
        python export_test_reference.py
@@ -10,7 +10,7 @@ For the original model outputs in results/ixi_samples_iter1/test/:
   2. Run this script:
        python run_analysis.py
      Or with custom paths:
-       python run_analysis.py --recon results/ixi_samples_iter1/test --gt data/ixi_test_reference
+       python run_analysis.py --recon results/ixi_samples/test --gt data/ixi_test_reference
 """
 import argparse
 import numpy as np
@@ -82,7 +82,7 @@ def plot_comparison(gt, recon):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze recon vs reference (PSNR/SSIM/NMSE)")
-    parser.add_argument("--recon", default="./results/ixi_samples_iter1/test",
+    parser.add_argument("--recon", default="./results/ixi_samples/test",
                         help="Directory of reconstruction .npy files")
     parser.add_argument("--gt", default="./data/ixi_test_reference",
                         help="Directory of ground-truth/reference .npy files (default: ./data/ixi_test_reference)")
